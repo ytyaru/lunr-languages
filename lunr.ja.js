@@ -73,7 +73,7 @@
       // change the tokenizer for japanese one
       lunr.tokenizer = lunr.ja.tokenizer;
     };
-    var segmenter = new TinySegmenter();  // インスタンス生成
+    var segmenter = new lunr.TinySegmenter();  // インスタンス生成
 
     lunr.ja.tokenizer = function (obj) {
         if (!arguments.length || obj == null || obj == undefined) return []
